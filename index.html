@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="keywords"
+      content="Drag race, Drag racing, Racing, Cars, Motorsports"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Drag Racing Circuit Gallery</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <center><img src="images/wdrc_banner.jpg" alt="WDRC" /></center>
+    </header>
+    <br />
+    <div class="hello">Past Events and Shows</div>
+
+    <div class="content" style="max-width: 1200px max-height: 700px">
+      <img
+        class="mySlides"
+        src="images/2023_RTWDRC_schedule.jpg"
+        style="width: 100%; display: none"
+      />
+      <img
+        class="mySlides"
+        src="images/2023_ETOWN_schedule2.png"
+        style="width: 100%; display: none"
+      />
+      <img
+        class="mySlides"
+        src="images/2023_ETOWN_schedule.jpg"
+        style="width: 100%; display: none"
+      />
+      <li></li>
+      <div class="row-padding section">
+        <div class="col s4">
+          <img
+            class="opacity hover-opacity-off"
+            src="images/2023_RTWDRC_schedule.jpg"
+            style="width: 100%; cursor: pointer"
+            onclick="currentDiv(1)"
+          />
+        </div>
+        <div class="col s4">
+          <img
+            class="opacity hover-opacity-off"
+            src="images/2023_ETOWN_schedule2.png"
+            style="width: 100%; cursor: pointer"
+            onclick="currentDiv(2)"
+          />
+        </div>
+        <div class="col s4">
+          <img
+            class="opacity hover-opacity-off"
+            src="images/2023_ETOWN_schedule.jpg"
+            style="width: 100%; cursor: pointer"
+            onclick="currentDiv(3)"
+          />
+        </div>
+      </div>
+    </div>
+    <li></li>
+    <div class="contains">
+      <!-- For videos already downloaded on computer-->
+      <!-- <video class="vid" width="640" height="360" controls> -->
+      <!-- <source -->
+      <!-- src="" -->
+      <!-- type="video/mp4" -->
+      <!-- /> </video>-->
+      <iframe
+        width="610"
+        height="360"
+        src="https://www.youtube.com/embed/kPstWl2sa-s"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="610"
+        height="360"
+        src="https://www.youtube.com/embed/oToHLpInuhc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        style="margin-left: 15px"
+      ></iframe>
+    </div>
+    <li></li>
+    <div class="contains">
+      <iframe
+        width="610"
+        height="360"
+        src="https://www.youtube.com/embed/2Uneti_gkIw"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+
+      <iframe
+        width="610"
+        height="360"
+        src="https://www.youtube.com/embed/sCV__MwCfH0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        style="margin-left: 15px"
+      ></iframe>
+    </div>
+    <li></li>
+    <div class="contains">
+      <iframe
+        width="610"
+        height="360"
+        src="https://www.youtube.com/embed/L-XvdDKH4EY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        width="610"
+        height="360"
+        src="https://www.youtube.com/embed/No7ywstahzk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        style="margin-left: 15px"
+      ></iframe>
+    </div>
+    <li></li>
+    <div class="contains">
+      <iframe
+        width="610"
+        height="360"
+        src="https://www.youtube.com/embed/iQGg9NRun08"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <iframe
+        width="610"
+        height="360"
+        src="https://www.youtube.com/embed/D9AWI-LQavE"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        style="margin-left: 15px"
+      ></iframe>
+    </div>
+    <br />
+    <center>
+      <div class="toTop" style="padding: 5px 0px">
+        <a href="#" class="icon"
+          ><img src="images/172559_wheel_steering_icon.png" alt=""
+        /></a>
+      </div>
+    </center>
+
+    <script>
+      //Slideshow
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("d");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " opacity-off";
+      }
+
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 7000);
+      }
+
+      // scroll up button
+      let topIcon = document.querySelector(".toTop");
+      let pageTopLocation;
+      window.addEventListener("scroll", function () {
+        pageTopLocation = window.pageYOffset;
+        if (
+          document.body.scrollTop > 25 ||
+          document.documentElement.scrollTop > 25
+        ) {
+          topIcon.style.display = "block";
+        } else {
+          topIcon.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
